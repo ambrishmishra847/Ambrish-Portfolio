@@ -87,7 +87,7 @@
             font-size: 1.5rem;
             font-weight: 300;
             margin-bottom: 30px;
-            animation: fadeInUp 1s ease-in-out 0.5s;
+            animation: fadeInUp 1s ease-in-out 0.5s; /* Re-added original animation */
             animation-fill-mode: both;
         }
 
@@ -96,7 +96,7 @@
             padding: 12px 30px;
             border-radius: 50px;
             transition: all 0.3s ease;
-            animation: fadeInUp 1s ease-in-out 1s;
+            animation: fadeInUp 1s ease-in-out 1s; /* Removed pulse animation */
             animation-fill-mode: both;
         }
         
@@ -123,7 +123,7 @@
             text-align: left;
         }
 
-        /* Skills Section */
+        /* Skills Section - Reverted to original grid styling */
         .skill-card {
             background-color: #fff;
             border: none;
@@ -149,6 +149,7 @@
             font-weight: 600;
         }
 
+
         /* Projects Section */
         .project-card {
             border: none;
@@ -156,6 +157,8 @@
             overflow: hidden;
             box-shadow: 0 5px 20px rgba(0,0,0,0.08);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex; /* Added for consistent height */
+            flex-direction: column; /* Added for consistent height */
         }
 
         .project-card:hover {
@@ -166,6 +169,8 @@
         .project-card-img {
             height: 250px;
             object-fit: cover;
+            border-top-left-radius: 15px; /* Added for rounded corners */
+            border-top-right-radius: 15px; /* Added for rounded corners */
         }
 
         /* Contact Section */
@@ -202,6 +207,8 @@
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
+
+        /* Removed Pulse Animation for Hero Button */
     </style>
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar">
@@ -245,7 +252,7 @@
     <section id="hero">
         <div class="container">
             <h1>I'm Ambrish Mishra</h1>
-            <p>B.Tech Student in Computer Science & AI</p>
+            <p>A Motivated B.Tech Student in Computer Science & AI</p> <!-- Reverted to static text -->
             <a href="#projects" class="btn btn-primary btn-hero">View My Work</a>
         </div>
     </section>
@@ -320,7 +327,7 @@
                 <!-- Skill Card: SQL -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6">
                     <div class="card skill-card h-100">
-                        <img src="61_sql-database-generic.90b41636a8.jpg" class="card-img-top skill-card-img" alt="SQL Logo">
+                        <img src="https://placehold.co/120x120/EFEFEF/333333?text=SQL" class="card-img-top skill-card-img" alt="SQL Logo"> 
                         <div class="card-body p-0">
                             <h5 class="card-title">SQL</h5>
                         </div>
@@ -423,7 +430,7 @@
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Resume Builder Web App</h5>
                             <p class="card-text">Developed a web application for creating and customizing professional resumes. Successfully implemented a responsive design, ensuring a seamless user experience across various devices.</p>
-                            <a href="https://resumebuilderapplication-by-ambrish.netlify.app/" class="btn btn-primary mt-auto">View Project</a>
+                            <a href="https://resumebuilderapplication-by-ambrish.netlify.app/" target="_blank" class="btn btn-primary mt-auto">View Project</a>
                         </div>
                     </div>
                 </div>
@@ -435,6 +442,28 @@
                             <h5 class="card-title">Online Learning Management System (LMS)</h5>
                             <p class="card-text">Designed and implemented a full-stack Learning Management System with features for course creation, user enrollment, and content management.</p>
                             <a href="#" class="btn btn-primary mt-auto">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="col-md-6 col-lg-5">
+                    <div class="card project-card h-100">
+                        <img src="https://placehold.co/600x400/28a745/ffffff?text=TMS" class="card-img-top project-card-img" alt="Task Management System Project"> 
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Task Management System</h5>
+                            <p class="card-text">Developed a robust task management system, enabling users to efficiently organize, track, and prioritize their tasks with an intuitive interface.</p>
+                            <a href="#" class="btn btn-primary mt-auto">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4: Movie Search App -->
+                <div class="col-md-6 col-lg-5">
+                    <div class="card project-card h-100">
+                        <img src="https://placehold.co/600x400/0dcaf0/ffffff?text=Movie+Search+App" class="card-img-top project-card-img" alt="Movie Search App Project">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Movie Search App</h5>
+                            <p class="card-text">Created an interactive web application allowing users to search for movies, view details, and explore film information using external APIs.</p>
+                            <a href="https://github.com/ambrishmishra847/Movie-Search-App" target="_blank" class="btn btn-primary mt-auto">View Project</a>
                         </div>
                     </div>
                 </div>
@@ -452,24 +481,45 @@
                          <div class="card-body">
                             <h5 class="card-title">Patent: Face Recognition System using Deep Machine Learning</h5>
                             <p class="card-text">Filed and published a patent for an innovative system and method for enhanced facial recognition.</p>
-                            <a href="#" class="btn btn-outline-primary">View Patent</a>
+                            <a href="https://drive.google.com/file/d/1S9W3ZE_6ZeOVGO4oWJ-XXynBNz3eJ0ki/view?usp=drive_link" target="_blank" class="btn btn-outline-primary">View Patent</a>
                          </div>
                      </div>
                       <div class="card achievement-card mb-4">
                          <div class="card-body">
                             <h5 class="card-title">AMCAT Certified</h5>
                             <p class="card-text">Achieved certification in English, Quantitative, and Logical Skills (2023).</p>
-                             <a href="#" class="btn btn-outline-primary">View Credential</a>
+                             <a href="https://drive.google.com/file/d/1PUfSfEG8LFas7bptAQtLtioeu4viPJGS/view?usp=drive_link" target="_blank" class="btn btn-outline-primary">View Credential</a>
+                         </div>
+                     </div>
+                     <!-- Separated C & C++ Programming Certification -->
+                     <div class="card achievement-card mb-4">
+                         <div class="card-body">
+                            <h5 class="card-title">C & C++ Programming Certification</h5>
+                            <p class="card-text">Certified in C & C++ Programming by E & ICT Academy, IIT Kanpur.</p>
+                            <a href="https://drive.google.com/file/d/1V8YCbUCD3Ab8qORNwCSUL0RsWe4RsoLl/view?usp=drive_link" target="_blank" class="btn btn-outline-primary">View Credential</a>
+                         </div>
+                     </div>
+                     <!-- Separated C Language Training Certification -->
+                     <div class="card achievement-card mb-4">
+                         <div class="card-body">
+                            <h5 class="card-title">C Language Training</h5>
+                            <p class="card-text">Completed C Language Training from IIT Bombay.</p>
+                            <a href="https://drive.google.com/file/d/1bteotm3qRiX7YR47vn_PnQ54R2VwQr4v/view?usp=drive_link" target="_blank" class="btn btn-outline-primary">View Credential</a>
+                         </div>
+                     </div>
+                     <!-- Separated Cybersecurity Foundation Certification -->
+                     <div class="card achievement-card mb-4">
+                         <div class="card-body">
+                            <h5 class="card-title">Cybersecurity Foundation Certification</h5>
+                            <p class="card-text">Achieved Cybersecurity Foundation certification from Palo Alto Networks.</p>
+                            <a href="https://drive.google.com/file/d/1lFILRAJBWvnQCYCE03jADNfg_XsztIlz/view?usp=drive_link" target="_blank" class="btn btn-outline-primary">View Credential</a>
                          </div>
                      </div>
                      <div class="card achievement-card">
                          <div class="card-body">
-                            <h5 class="card-title">Other Certifications</h5>
-                            <p class="card-text mb-1"><strong>C & C++ Programming:</strong> E & ICT Academy, IIT Kanpur</p>
-                            <p class="card-text mb-1"><strong>C Language Training:</strong> IIT Bombay</p>
-                            <p class="card-text mb-3"><strong>Cybersecurity Foundation:</strong> Palo Alto Networks</p>
+                            <h5 class="card-title">Other Profiles</h5>
                             <a href="#" class="btn btn-outline-primary me-2">Credly Profile</a>
-                            <a href="#" class="btn btn-outline-primary">Google Cloud Skills</a>
+                            <a href="https://www.cloudskillsboost.google/public_profiles/4b8ac6e8-0308-4b8a-94bf-8f288a3704ce" target="_blank" class="btn btn-outline-primary">Google Cloud Skills</a>
                          </div>
                      </div>
                 </div>
@@ -486,9 +536,9 @@
                 <a href="mailto:ambrishmishra847@gmail.com" class="text-decoration-none text-dark">ambrishmishra847@gmail.com</a>
             </p>
             <div class="social-icons">
-                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://github.com/ambrishmishra847" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/ambrish8178" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.instagram.com/ambrish.mishra.35762/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
             </div>
         </div>
     </section>
