@@ -131,6 +131,10 @@
             box-shadow: 0 5px 20px rgba(0,0,0,0.08);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
         }
         
         .skill-card:hover {
@@ -139,7 +143,8 @@
         }
 
         .skill-card-img {
-            height: 80px;
+            height: 60px; /* Adjusted for better consistency */
+            width: 60px; /* Adjusted for better consistency */
             object-fit: contain;
             margin-bottom: 15px;
         }
@@ -261,7 +266,7 @@
             <h2 class="text-center section-title">About Me</h2>
             <div class="row align-items-center">
                 <div class="col-lg-5 text-center">
-                    <img src="data:image/jpeg;base64,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wMDBgMDBg0JBwkNDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ//dAAQAPf/aAAwDAQACEQMRAD8A+iKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigA-"/>
+                    <img src="data:image/jpeg;base64,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wMDBgMDBg0JBwkNDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ//dAAQAPf/aAAwDAQACEQMRAD8A+iKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigA-"/>
                 </div>
                 <div class="col-lg-7">
                     <h3>Hello! I'm Ambrish Mishra.</h3>
@@ -307,107 +312,107 @@
                 <!-- Programming Languages -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6">
                     <div class="card skill-card h-100">
-                        <img src="https://www.svgrepo.com/show/354258/python.svg" class="card-img-top skill-card-img" alt="Python Logo">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/python.svg" class="card-img-top skill-card-img" alt="Python Logo">
                         <div class="card-body p-0"><h5 class="card-title">Python</h5></div>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6">
                     <div class="card skill-card h-100">
-                        <img src="https://www.svgrepo.com/show/353523/c-plusplus.svg" class="card-img-top skill-card-img" alt="C++ Logo">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/cplusplus.svg" class="card-img-top skill-card-img" alt="C++ Logo">
                         <div class="card-body p-0"><h5 class="card-title">C/C++</h5></div>
                     </div>
                 </div>
                 <!-- Web Development -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6">
                     <div class="card skill-card h-100">
-                        <img src="https://www.svgrepo.com/show/353880/html-5.svg" class="card-img-top skill-card-img" alt="HTML5 Logo">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/html5.svg" class="card-img-top skill-card-img" alt="HTML5 Logo">
                         <div class="card-body p-0"><h5 class="card-title">HTML</h5></div>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6">
                     <div class="card skill-card h-100">
-                        <img src="https://www.svgrepo.com/show/353667/css-3.svg" class="card-img-top skill-card-img" alt="CSS3 Logo">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/css3.svg" class="card-img-top skill-card-img" alt="CSS3 Logo">
                         <div class="card-body p-0"><h5 class="card-title">CSS</h5></div>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6">
                     <div class="card skill-card h-100">
-                        <img src="https://www.svgrepo.com/show/353925/javascript.svg" class="card-img-top skill-card-img" alt="JavaScript Logo">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/javascript.svg" class="card-img-top skill-card-img" alt="JavaScript Logo">
                         <div class="card-body p-0"><h5 class="card-title">JavaScript</h5></div>
                     </div>
                 </div>
                  <div class="col-lg-2 col-md-3 col-sm-4 col-6">
                     <div class="card skill-card h-100">
-                        <img src="https://www.svgrepo.com/show/353498/bootstrap.svg" class="card-img-top skill-card-img" alt="Bootstrap Logo">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/bootstrap.svg" class="card-img-top skill-card-img" alt="Bootstrap Logo">
                         <div class="card-body p-0"><h5 class="card-title">Bootstrap</h5></div>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6">
                     <div class="card skill-card h-100">
-                        <img src="https://www.svgrepo.com/show/354259/react.svg" class="card-img-top skill-card-img" alt="React Logo">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/react.svg" class="card-img-top skill-card-img" alt="React Logo">
                         <div class="card-body p-0"><h5 class="card-title">React</h5></div>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6">
                     <div class="card skill-card h-100">
-                        <img src="https://www.svgrepo.com/show/354119/nodejs-icon.svg" class="card-img-top skill-card-img" alt="Node.js Logo">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/nodedotjs.svg" class="card-img-top skill-card-img" alt="Node.js Logo">
                         <div class="card-body p-0"><h5 class="card-title">Node.js</h5></div>
                     </div>
                 </div>
                 <!-- Database -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6">
                     <div class="card skill-card h-100">
-                        <img src="https://www.svgrepo.com/show/331488/mongodb.svg" class="card-img-top skill-card-img" alt="MongoDB Logo"> 
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/mongodb.svg" class="card-img-top skill-card-img" alt="MongoDB Logo"> 
                         <div class="card-body p-0"><h5 class="card-title">MongoDB</h5></div>
                     </div>
                 </div>
                 <!-- AI & Tools -->
                  <div class="col-lg-2 col-md-3 col-sm-4 col-6">
                     <div class="card skill-card h-100">
-                        <img src="https://www.svgrepo.com/show/500414/google-ai.svg" class="card-img-top skill-card-img" alt="Google AI Studio">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/googlecloud.svg" class="card-img-top skill-card-img" alt="Google AI Studio">
                         <div class="card-body p-0"><h5 class="card-title">Google AI Studio</h5></div>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6">
                     <div class="card skill-card h-100">
-                        <img src="https://www.svgrepo.com/show/511133/chat-gpt-4.svg" class="card-img-top skill-card-img" alt="ChatGPT Logo">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/openai.svg" class="card-img-top skill-card-img" alt="ChatGPT Logo">
                         <div class="card-body p-0"><h5 class="card-title">ChatGPT</h5></div>
                     </div>
                 </div>
                  <div class="col-lg-2 col-md-3 col-sm-4 col-6">
                     <div class="card skill-card h-100">
-                        <img src="https://www.svgrepo.com/show/533036/google-gemini.svg" class="card-img-top skill-card-img" alt="Gemini Logo">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/googlebard.svg" class="card-img-top skill-card-img" alt="Gemini Logo">
                         <div class="card-body p-0"><h5 class="card-title">Gemini</h5></div>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6">
                     <div class="card skill-card h-100">
-                        <img src="https://www.svgrepo.com/show/521137/perplexity.svg" class="card-img-top skill-card-img" alt="Perplexity Logo">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/perplexity.svg" class="card-img-top skill-card-img" alt="Perplexity Logo">
                         <div class="card-body p-0"><h5 class="card-title">Perplexity</h5></div>
                     </div>
                 </div>
                  <div class="col-lg-2 col-md-3 col-sm-4 col-6">
                     <div class="card skill-card h-100">
-                        <img src="https://www.svgrepo.com/show/533027/claude-2.svg" class="card-img-top skill-card-img" alt="Claude Logo">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/anthropic.svg" class="card-img-top skill-card-img" alt="Claude Logo">
                         <div class="card-body p-0"><h5 class="card-title">Claude</h5></div>
                     </div>
                 </div>
                 <!-- Other Tools -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6">
                     <div class="card skill-card h-100">
-                        <img src="https://www.svgrepo.com/show/353782/git-icon.svg" class="card-img-top skill-card-img" alt="Git Logo">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/git.svg" class="card-img-top skill-card-img" alt="Git Logo">
                         <div class="card-body p-0"><h5 class="card-title">Git</h5></div>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6">
                     <div class="card skill-card h-100">
-                        <img src="https://www.svgrepo.com/show/353953/jupyter.svg" class="card-img-top skill-card-img" alt="Jupyter Logo">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/jupyter.svg" class="card-img-top skill-card-img" alt="Jupyter Logo">
                         <div class="card-body p-0"><h5 class="card-title">Jupyter</h5></div>
                     </div>
                 </div>
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6">
                     <div class="card skill-card h-100">
-                        <img src="https://www.svgrepo.com/show/353755/framer.svg" class="card-img-top skill-card-img" alt="Framer Logo">
+                        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/framer.svg" class="card-img-top skill-card-img" alt="Framer Logo">
                         <div class="card-body p-0"><h5 class="card-title">Framer</h5></div>
                     </div>
                 </div>
@@ -553,3 +558,4 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
