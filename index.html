@@ -87,7 +87,7 @@
             font-size: 1.5rem;
             font-weight: 300;
             margin-bottom: 30px;
-            animation: fadeInUp 1s ease-in-out 0.5s; /* Re-added original animation */
+            animation: fadeInUp 1s ease-in-out 0.5s;
             animation-fill-mode: both;
         }
 
@@ -96,7 +96,7 @@
             padding: 12px 30px;
             border-radius: 50px;
             transition: all 0.3s ease;
-            animation: fadeInUp 1s ease-in-out 1s; /* Removed pulse animation */
+            animation: fadeInUp 1s ease-in-out 1s;
             animation-fill-mode: both;
         }
         
@@ -115,15 +115,15 @@
             object-fit: cover;
         }
         
-        /* Education & Achievements Section */
-        .card.education-card, .card.achievement-card {
+        /* Card Styling */
+        .card.education-card, .card.achievement-card, .card.certification-card {
             border: none;
             border-radius: 15px;
             box-shadow: 0 5px 20px rgba(0,0,0,0.08);
             text-align: left;
         }
 
-        /* Skills Section - Reverted to original grid styling */
+        /* Skills Section */
         .skill-card {
             background-color: #fff;
             border: none;
@@ -149,7 +149,6 @@
             font-weight: 600;
         }
 
-
         /* Projects Section */
         .project-card {
             border: none;
@@ -157,8 +156,8 @@
             overflow: hidden;
             box-shadow: 0 5px 20px rgba(0,0,0,0.08);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            display: flex; /* Added for consistent height */
-            flex-direction: column; /* Added for consistent height */
+            display: flex;
+            flex-direction: column;
         }
 
         .project-card:hover {
@@ -169,8 +168,6 @@
         .project-card-img {
             height: 250px;
             object-fit: cover;
-            border-top-left-radius: 15px; /* Added for rounded corners */
-            border-top-right-radius: 15px; /* Added for rounded corners */
         }
 
         /* Contact Section */
@@ -207,8 +204,6 @@
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
-
-        /* Removed Pulse Animation for Hero Button */
     </style>
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbar">
@@ -241,6 +236,9 @@
                         <a class="nav-link" href="#achievements">Achievements</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#certifications">Certifications</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
@@ -252,7 +250,7 @@
     <section id="hero">
         <div class="container">
             <h1>I'm Ambrish Mishra</h1>
-            <p>A Motivated B.Tech Student in Computer Science & AI</p> <!-- Reverted to static text -->
+            <p>A Motivated B.Tech Student in Computer Science & AI</p>
             <a href="#projects" class="btn btn-primary btn-hero">View My Work</a>
         </div>
     </section>
@@ -263,7 +261,7 @@
             <h2 class="text-center section-title">About Me</h2>
             <div class="row align-items-center">
                 <div class="col-lg-5 text-center">
-                    <img src="Profile.JPG" alt="Ambrish Mishra" class="img-fluid mb-4 mb-lg-0">
+                    <img src="data:image/jpeg;base64,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wMDBgMDBg0JBwkNDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ//dAAQAPf/aAAwDAQACEQMRAD8A+iKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigA-"/>
                 </div>
                 <div class="col-lg-7">
                     <h3>Hello! I'm Ambrish Mishra.</h3>
@@ -306,112 +304,111 @@
         <div class="container">
             <h2 class="text-center section-title">My Skills</h2>
             <div class="row g-4 justify-content-center text-center">
-                <!-- Skill Card: Python -->
+                <!-- Programming Languages -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6">
                     <div class="card skill-card h-100">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" class="card-img-top skill-card-img" alt="Python Logo">
-                        <div class="card-body p-0">
-                            <h5 class="card-title">Python</h5>
-                        </div>
+                        <img src="https://www.svgrepo.com/show/354258/python.svg" class="card-img-top skill-card-img" alt="Python Logo">
+                        <div class="card-body p-0"><h5 class="card-title">Python</h5></div>
                     </div>
                 </div>
-                <!-- Skill Card: C/C++ -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6">
                     <div class="card skill-card h-100">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" class="card-img-top skill-card-img" alt="C++ Logo">
-                        <div class="card-body p-0">
-                            <h5 class="card-title">C/C++</h5>
-                        </div>
+                        <img src="https://www.svgrepo.com/show/353523/c-plusplus.svg" class="card-img-top skill-card-img" alt="C++ Logo">
+                        <div class="card-body p-0"><h5 class="card-title">C/C++</h5></div>
                     </div>
                 </div>
-                <!-- Skill Card: SQL -->
+                <!-- Web Development -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6">
                     <div class="card skill-card h-100">
-                        <img src="https://placehold.co/120x120/EFEFEF/333333?text=SQL" class="card-img-top skill-card-img" alt="SQL Logo"> 
-                        <div class="card-body p-0">
-                            <h5 class="card-title">SQL</h5>
-                        </div>
+                        <img src="https://www.svgrepo.com/show/353880/html-5.svg" class="card-img-top skill-card-img" alt="HTML5 Logo">
+                        <div class="card-body p-0"><h5 class="card-title">HTML</h5></div>
                     </div>
                 </div>
-                <!-- Skill Card: HTML -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6">
                     <div class="card skill-card h-100">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" class="card-img-top skill-card-img" alt="HTML5 Logo">
-                        <div class="card-body p-0">
-                            <h5 class="card-title">HTML</h5>
-                        </div>
+                        <img src="https://www.svgrepo.com/show/353667/css-3.svg" class="card-img-top skill-card-img" alt="CSS3 Logo">
+                        <div class="card-body p-0"><h5 class="card-title">CSS</h5></div>
                     </div>
                 </div>
-                <!-- Skill Card: CSS -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6">
                     <div class="card skill-card h-100">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" class="card-img-top skill-card-img" alt="CSS3 Logo">
-                        <div class="card-body p-0">
-                            <h5 class="card-title">CSS</h5>
-                        </div>
+                        <img src="https://www.svgrepo.com/show/353925/javascript.svg" class="card-img-top skill-card-img" alt="JavaScript Logo">
+                        <div class="card-body p-0"><h5 class="card-title">JavaScript</h5></div>
                     </div>
                 </div>
-                <!-- Skill Card: JavaScript -->
-                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                 <div class="col-lg-2 col-md-3 col-sm-4 col-6">
                     <div class="card skill-card h-100">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" class="card-img-top skill-card-img" alt="JavaScript Logo">
-                        <div class="card-body p-0">
-                            <h5 class="card-title">JavaScript</h5>
-                        </div>
+                        <img src="https://www.svgrepo.com/show/353498/bootstrap.svg" class="card-img-top skill-card-img" alt="Bootstrap Logo">
+                        <div class="card-body p-0"><h5 class="card-title">Bootstrap</h5></div>
                     </div>
                 </div>
-                 <!-- Skill Card: Bootstrap -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6">
                     <div class="card skill-card h-100">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" class="card-img-top skill-card-img" alt="Bootstrap Logo">
-                        <div class="card-body p-0">
-                            <h5 class="card-title">Bootstrap</h5>
-                        </div>
+                        <img src="https://www.svgrepo.com/show/354259/react.svg" class="card-img-top skill-card-img" alt="React Logo">
+                        <div class="card-body p-0"><h5 class="card-title">React</h5></div>
                     </div>
                 </div>
-                <!-- Skill Card: React -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6">
                     <div class="card skill-card h-100">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" class="card-img-top skill-card-img" alt="React Logo">
-                        <div class="card-body p-0">
-                            <h5 class="card-title">React</h5>
-                        </div>
+                        <img src="https://www.svgrepo.com/show/354119/nodejs-icon.svg" class="card-img-top skill-card-img" alt="Node.js Logo">
+                        <div class="card-body p-0"><h5 class="card-title">Node.js</h5></div>
                     </div>
                 </div>
-                <!-- Skill Card: Node.js -->
+                <!-- Database -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6">
                     <div class="card skill-card h-100">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" class="card-img-top skill-card-img" alt="Node.js Logo">
-                        <div class="card-body p-0">
-                            <h5 class="card-title">Node.js</h5>
-                        </div>
+                        <img src="https://www.svgrepo.com/show/331488/mongodb.svg" class="card-img-top skill-card-img" alt="MongoDB Logo"> 
+                        <div class="card-body p-0"><h5 class="card-title">MongoDB</h5></div>
                     </div>
                 </div>
-                <!-- Skill Card: Git -->
-                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                <!-- AI & Tools -->
+                 <div class="col-lg-2 col-md-3 col-sm-4 col-6">
                     <div class="card skill-card h-100">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg" class="card-img-top skill-card-img" alt="Git Logo">
-                        <div class="card-body p-0">
-                            <h5 class="card-title">Git</h5>
-                        </div>
+                        <img src="https://www.svgrepo.com/show/500414/google-ai.svg" class="card-img-top skill-card-img" alt="Google AI Studio">
+                        <div class="card-body p-0"><h5 class="card-title">Google AI Studio</h5></div>
                     </div>
                 </div>
-                 <!-- Skill Card: Vertex AI -->
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6">
                     <div class="card skill-card h-100">
-                        <img src="https://placehold.co/120x120/EFEFEF/333333?text=Vertex+AI" class="card-img-top skill-card-img" alt="Vertex AI">
-                        <div class="card-body p-0">
-                            <h5 class="card-title">Vertex AI</h5>
-                        </div>
+                        <img src="https://www.svgrepo.com/show/511133/chat-gpt-4.svg" class="card-img-top skill-card-img" alt="ChatGPT Logo">
+                        <div class="card-body p-0"><h5 class="card-title">ChatGPT</h5></div>
                     </div>
                 </div>
-                <!-- Skill Card: Jupyter -->
+                 <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div class="card skill-card h-100">
+                        <img src="https://www.svgrepo.com/show/533036/google-gemini.svg" class="card-img-top skill-card-img" alt="Gemini Logo">
+                        <div class="card-body p-0"><h5 class="card-title">Gemini</h5></div>
+                    </div>
+                </div>
                 <div class="col-lg-2 col-md-3 col-sm-4 col-6">
                     <div class="card skill-card h-100">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg" class="card-img-top skill-card-img" alt="Jupyter Logo">
-                        <div class="card-body p-0">
-                            <h5 class="card-title">Jupyter</h5>
-                        </div>
+                        <img src="https://www.svgrepo.com/show/521137/perplexity.svg" class="card-img-top skill-card-img" alt="Perplexity Logo">
+                        <div class="card-body p-0"><h5 class="card-title">Perplexity</h5></div>
+                    </div>
+                </div>
+                 <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div class="card skill-card h-100">
+                        <img src="https://www.svgrepo.com/show/533027/claude-2.svg" class="card-img-top skill-card-img" alt="Claude Logo">
+                        <div class="card-body p-0"><h5 class="card-title">Claude</h5></div>
+                    </div>
+                </div>
+                <!-- Other Tools -->
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div class="card skill-card h-100">
+                        <img src="https://www.svgrepo.com/show/353782/git-icon.svg" class="card-img-top skill-card-img" alt="Git Logo">
+                        <div class="card-body p-0"><h5 class="card-title">Git</h5></div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div class="card skill-card h-100">
+                        <img src="https://www.svgrepo.com/show/353953/jupyter.svg" class="card-img-top skill-card-img" alt="Jupyter Logo">
+                        <div class="card-body p-0"><h5 class="card-title">Jupyter</h5></div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-4 col-6">
+                    <div class="card skill-card h-100">
+                        <img src="https://www.svgrepo.com/show/353755/framer.svg" class="card-img-top skill-card-img" alt="Framer Logo">
+                        <div class="card-body p-0"><h5 class="card-title">Framer</h5></div>
                     </div>
                 </div>
             </div>
@@ -423,13 +420,24 @@
         <div class="container">
             <h2 class="text-center section-title">My Projects</h2>
             <div class="row g-4 justify-content-center">
+                <!-- Project: Script Arena -->
+                <div class="col-md-6 col-lg-5">
+                    <div class="card project-card h-100">
+                        <img src="https://placehold.co/600x400/17a2b8/ffffff?text=Script+Arena" class="card-img-top project-card-img" alt="Script Arena Project">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Script Arena</h5>
+                            <p class="card-text">An innovative platform for scriptwriters and filmmakers to collaborate and bring stories to life. Currently in development.</p>
+                            <a href="#" class="btn btn-secondary mt-auto disabled">Coming Soon</a>
+                        </div>
+                    </div>
+                </div>
                 <!-- Project 1 -->
                 <div class="col-md-6 col-lg-5">
                     <div class="card project-card h-100">
                         <img src="https://placehold.co/600x400/343a40/ffffff?text=Resume+Builder" class="card-img-top project-card-img" alt="Resume Builder Project">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Resume Builder Web App</h5>
-                            <p class="card-text">Developed a web application for creating and customizing professional resumes. Successfully implemented a responsive design, ensuring a seamless user experience across various devices.</p>
+                            <p class="card-text">Developed a web application for creating and customizing professional resumes with a responsive design.</p>
                             <a href="https://resumebuilderapplication-by-ambrish.netlify.app/" target="_blank" class="btn btn-primary mt-auto">View Project</a>
                         </div>
                     </div>
@@ -440,18 +448,7 @@
                         <img src="https://placehold.co/600x400/6f42c1/ffffff?text=LMS" class="card-img-top project-card-img" alt="LMS Project">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Online Learning Management System (LMS)</h5>
-                            <p class="card-text">Designed and implemented a full-stack Learning Management System with features for course creation, user enrollment, and content management.</p>
-                            <a href="#" class="btn btn-primary mt-auto">View Project</a>
-                        </div>
-                    </div>
-                </div>
-                <!-- Project 3 -->
-                <div class="col-md-6 col-lg-5">
-                    <div class="card project-card h-100">
-                        <img src="https://placehold.co/600x400/28a745/ffffff?text=TMS" class="card-img-top project-card-img" alt="Task Management System Project"> 
-                        <div class="card-body d-flex flex-column">
-                            <h5 class="card-title">Task Management System</h5>
-                            <p class="card-text">Developed a robust task management system, enabling users to efficiently organize, track, and prioritize their tasks with an intuitive interface.</p>
+                            <p class="card-text">A full-stack Learning Management System with features for course creation, user enrollment, and content management.</p>
                             <a href="#" class="btn btn-primary mt-auto">View Project</a>
                         </div>
                     </div>
@@ -462,7 +459,7 @@
                         <img src="https://placehold.co/600x400/0dcaf0/ffffff?text=Movie+Search+App" class="card-img-top project-card-img" alt="Movie Search App Project">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Movie Search App</h5>
-                            <p class="card-text">Created an interactive web application allowing users to search for movies, view details, and explore film information using external APIs.</p>
+                            <p class="card-text">Created an interactive web application allowing users to search for movies and view details using external APIs.</p>
                             <a href="https://github.com/ambrishmishra847/Movie-Search-App" target="_blank" class="btn btn-primary mt-auto">View Project</a>
                         </div>
                     </div>
@@ -474,52 +471,54 @@
     <!-- Achievements Section -->
     <section id="achievements" class="section-padding">
         <div class="container">
-            <h2 class="text-center section-title">Achievements & Certifications</h2>
+            <h2 class="text-center section-title">Achievements</h2>
             <div class="row justify-content-center g-4">
                 <div class="col-lg-8">
                      <div class="card achievement-card mb-4">
                          <div class="card-body">
                             <h5 class="card-title">Patent: Face Recognition System using Deep Machine Learning</h5>
                             <p class="card-text">Filed and published a patent for an innovative system and method for enhanced facial recognition.</p>
-                            <a href="https://drive.google.com/file/d/1S9W3ZE_6ZeOVGO4oWJ-XXynBNz3eJ0ki/view?usp=drive_link" target="_blank" class="btn btn-outline-primary">View Patent</a>
                          </div>
                      </div>
                       <div class="card achievement-card mb-4">
                          <div class="card-body">
                             <h5 class="card-title">AMCAT Certified</h5>
                             <p class="card-text">Achieved certification in English, Quantitative, and Logical Skills (2023).</p>
-                             <a href="https://drive.google.com/file/d/1PUfSfEG8LFas7bptAQtLtioeu4viPJGS/view?usp=drive_link" target="_blank" class="btn btn-outline-primary">View Credential</a>
                          </div>
                      </div>
-                     <!-- Separated C & C++ Programming Certification -->
-                     <div class="card achievement-card mb-4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="text-center section-title">Certifications</h2>
+            <div class="row justify-content-center g-4">
+                <div class="col-lg-8">
+                    <div class="card certification-card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Virtual Internship - Google Cloud Generative AI</h5>
+                            <p class="card-text">Completed a virtual internship from SmartBridge focusing on Google Cloud Generative AI concepts and practical application.</p>
+                        </div>
+                    </div>
+                    <div class="card certification-card mb-4">
+                        <div class="card-body">
+                            <h5 class="card-title">Real-World API Skills Bootcamp</h5>
+                            <p class="card-text">Completed a skill camp on career-ready API development skills from NoviTech R&D.</p>
+                        </div>
+                    </div>
+                     <div class="card certification-card mb-4">
                          <div class="card-body">
-                            <h5 class="card-title">C & C++ Programming Certification</h5>
+                            <h5 class="card-title">C & C++ Programming</h5>
                             <p class="card-text">Certified in C & C++ Programming by E & ICT Academy, IIT Kanpur.</p>
-                            <a href="https://drive.google.com/file/d/1V8YCbUCD3Ab8qORNwCSUL0RsWe4RsoLl/view?usp=drive_link" target="_blank" class="btn btn-outline-primary">View Credential</a>
                          </div>
                      </div>
-                     <!-- Separated C Language Training Certification -->
-                     <div class="card achievement-card mb-4">
+                     <div class="card certification-card mb-4">
                          <div class="card-body">
-                            <h5 class="card-title">C Language Training</h5>
-                            <p class="card-text">Completed C Language Training from IIT Bombay.</p>
-                            <a href="https://drive.google.com/file/d/1bteotm3qRiX7YR47vn_PnQ54R2VwQr4v/view?usp=drive_link" target="_blank" class="btn btn-outline-primary">View Credential</a>
-                         </div>
-                     </div>
-                     <!-- Separated Cybersecurity Foundation Certification -->
-                     <div class="card achievement-card mb-4">
-                         <div class="card-body">
-                            <h5 class="card-title">Cybersecurity Foundation Certification</h5>
+                            <h5 class="card-title">Cybersecurity Foundation</h5>
                             <p class="card-text">Achieved Cybersecurity Foundation certification from Palo Alto Networks.</p>
-                            <a href="https://drive.google.com/file/d/1lFILRAJBWvnQCYCE03jADNfg_XsztIlz/view?usp=drive_link" target="_blank" class="btn btn-outline-primary">View Credential</a>
-                         </div>
-                     </div>
-                     <div class="card achievement-card">
-                         <div class="card-body">
-                            <h5 class="card-title">Other Profiles</h5>
-                            <a href="#" class="btn btn-outline-primary me-2">Credly Profile</a>
-                            <a href="https://www.cloudskillsboost.google/public_profiles/4b8ac6e8-0308-4b8a-94bf-8f288a3704ce" target="_blank" class="btn btn-outline-primary">Google Cloud Skills</a>
                          </div>
                      </div>
                 </div>
@@ -528,10 +527,10 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section-padding bg-light">
+    <section id="contact" class="section-padding">
         <div class="container text-center">
             <h2 class="section-title">Get In Touch</h2>
-            <p class="lead mb-4">I'm always open to discussing new projects, creative ideas, or opportunities. <br>Feel free to reach out to me for any collaborations.</p>
+            <p class="lead mb-4">I'm open to discussing new projects, creative ideas, or opportunities. <br>Feel free to reach out for any collaborations.</p>
             <p class="h4 mb-4">
                 <a href="mailto:ambrishmishra847@gmail.com" class="text-decoration-none text-dark">ambrishmishra847@gmail.com</a>
             </p>
